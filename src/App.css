@@ -1,38 +1,59 @@
+body {
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/10/10/56443/anime-clouds-16.jpg");
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.Main-text {
+  background-color: rgb(255, 255, 255, 0.5);
+  border: solid rgb(142, 154, 156, 0.5);
+  border-radius: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  -webkit-text-stroke: 2px black;
+  font-family: bookman;
   color: white;
+  font-size: 80px;
+  top: 0;
+  margin-top: 4%;
 }
 
-.App-link {
-  color: #61dafb;
+.Input-Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input {
+  opacity: 0.7;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.Button {
+  font-size: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin-bottom: 4%;
+}
+
+#weatherData {
+  font-size: 45px;
+  font-family: Georgia, serif;
+  background-color: rgb(255, 255, 255, 0.5);
+  border: solid rgb(142, 154, 156, 0.5);
+  border-radius: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
