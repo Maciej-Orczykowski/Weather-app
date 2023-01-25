@@ -12,7 +12,7 @@ function App() {
   async function fetchData(value) {
     try {
       const response = await fetch(
-        `https://api.weatherbit.io/v2.0/current?city=${value}&key=775de633e379461f979cf400dcb3bfe0&include=minutely`
+        `https://api.weatherbit.io/v2.0/current?city=${value}&key=49b3fe1d0c0040598513efe08e60f47c&include=minutely`
       );
 
       const json = await response.json();
@@ -25,8 +25,6 @@ function App() {
   const resetInputField = () => {
     setVal("");
   };
-
-  console.log(apiResponse?.data ? apiResponse?.data[0] : "Data");
 
   return (
     <div className="App">
